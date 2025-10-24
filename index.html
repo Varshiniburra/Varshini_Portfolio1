@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Varshini Burra — Java Full Stack Developer</title>
+   
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Typed.js (typing effect) -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- GSAP for floating / subtle animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- A small helper to avoid FOIT (defer main script) -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Glowing animated background shapes (pure HTML elements animated with CSS/GSAP) -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <div class="brand">Varshini <span>Burra</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     <i class="fa-solid fa-moon theme-toggle" id="themeToggle" aria-label="Toggle theme"></i>
+    </nav>
+  </header>
+
+  <!-- HERO / Intro -->
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-left" data-aos="fade-right" data-aos-delay="200">
+          <h1>Hi, I'm <span class="name">Varshini Burra</span></h1>
+          <h2 class="typed-line"><span id="typed"></span><span class="cursor">|</span></h2>
+          <p class="lead">
+            Java Full Stack Developer — I build reliable backends with <strong>Java (Core & Advanced)</strong> and vibrant frontends with <strong>HTML, CSS & JS</strong>.
+          </p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn ghost" href="https://github.com/Varshiniburra" target="_blank" rel="noopener">View GitHub</a>
+          </div>
+        </div>
+
+        <div class="hero-right" data-aos="fade-left" data-aos-delay="400">
+          <!-- device mock / project preview -->
+          <div class="card-preview">
+    <img src="assets\myprofile.jpeg" alt="Varshini Burra">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+<section id="about" class="section about">
+  <div class="container" data-aos="fade-up">
+    <h3 class="section-title">About Me</h3>
+    <div class="about-grid">
+      
+      <!-- 🖼️ New image on the LEFT -->
+      <div class="about-img">
+        <img src="assets\About.png" alt="Varshini Burra" />
+      </div>
+
+      <!-- ℹ️ Text on the RIGHT -->
+      <div class="about-text">
+        <p>
+          I recently graduated in Computer Engineering and specialize in Java Full Stack development.
+          I enjoy designing backend systems, optimizing APIs, and building responsive UI/UX experiences.
+          I’m seeking a role where I can grow and contribute to real-world products.
+        </p>
+        <ul class="about-list">
+          <li><strong>Experience:</strong> 3 projects (E-commerce, GUI, Portfolio)</li>
+          <li><strong>Languages:</strong> Java (Core & Advanced), C, Oracle, SQL, HTML, CSS, JavaScript</li>
+          <li><strong>Tools:</strong> Git, VS Code, Eclipse, GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container" data-aos="fade-up">
+        <h3 class="section-title">Skills</h3>
+        <div class="skill-grid">
+          <div class="skill" data-aos="flip-left" data-aos-delay="80">
+            <h4>Frontend</h4>
+            <p>· HTML </br>· CSS </br>· JavaScript </p>
+          </div>
+          <div class="skill" data-aos="flip-left" data-aos-delay="160">
+            <h4>Backend</h4>
+            <p>· Java (Core & Advanced) </br>· C</p>
+          </div>
+          <div class="skill" data-aos="flip-left" data-aos-delay="240">
+            <h4>Database</h4>
+            <p>· MySQL </br>· Oracle</p>
+          </div>
+          <div class="skill" data-aos="flip-left" data-aos-delay="320">
+            <h4>Tools</h4>
+            <p>· Git </br>· VS Code </br>· Eclipse</br> · GitHub </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container" data-aos="fade-up">
+        <h3 class="section-title">Projects</h3>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-aos="zoom-in" data-aos-delay="80">
+            <img src="assets\bms.webp" alt="Banking Management System screenshot">
+            <div class="project-body">
+              <h4>Bank Management System</h4>
+              <p>Core Java </p>
+              <div class="project-links">
+                <a href="#" class="link" onclick="openInNew(event,'https://github.com/Varshiniburra/Bank-Management-System')">Code</a>
+                <a href="#" class="link" onclick="openInNew(event,'https://your-demo-link.com')">Live</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-aos="zoom-in" data-aos-delay="160">
+            <img src="assets\restaurant.jpg" alt="Restaurant POS screenshot">
+            <div class="project-body">
+              <h4>Restaurant POS</h4>
+              <p>Java (Core & Advanced), MySQL — CRUD operations, role-based access, search & reports.</p>
+              <div class="project-links">
+                <a href="#" class="link" onclick="openInNew(event,'https://github.com/Varshiniburra/Restaurant-POS')">Code</a>
+                <a href="#" class="link" onclick="openInNew(event,'https://your-demo-link.com')">Live</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-aos="zoom-in" data-aos-delay="240">
+            <img src="assets\portfolio.png" alt="Portfolio screenshot">
+            <div class="project-body">
+              <h4>Portfolio Website</h4>
+              <p>HTML · CSS · JS — This site: modern design, animations, and responsive layout.</p>
+              <div class="project-links">
+                <a href="#" class="link" onclick="openInNew(event,'https://github.com/yourgithub/portfolio')">Code</a>
+                <a href="#" class="link" onclick="openInNew(event,'#')">Live</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container" data-aos="fade-up">
+        <h3 class="section-title">Contact</h3>
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form" onsubmit="sendMessage(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+
+          <div class="contact-info">
+            <h4>Get in touch</h4>
+            <p>📧 varshiniburra64@gmail.com</p>
+            <p>💼 <a href="https://www.linkedin.com/in/varshiniburra" target="_blank" rel="noopener">LinkedIn</a></p>
+            <p>💻 <a href="https://github.com/Varshiniburra" target="_blank" rel="noopener">GitHub</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Varshini Burra — Built with Java, HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</body>
+</html>
